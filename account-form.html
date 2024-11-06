@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <link rel="stylesheet" href="account-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Create Account</h1>
+            <p>Fill in the details to get started.</p>
+        </div>
+        <form id="signupForm">
+            <div class="form-group">
+                <label class="required" for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                <br>
+                <label class="required" for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="youremail@gmail.com">
+                <br>
+                <label class="required" for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Insert Password Here">
+                <br>
+                <label class="required" for="role">Choose a Position:</label>
+                <select id="role" name="role">
+                    <option value="office">Office</option>
+                    <option value="manager">Manager</option>
+                    <option value="janator">Janitor</option>
+                     <option value="assistant">Assistant</option>
+                </select>
+                <br>
+                <label class="required" for="para">Bio Text Area</label>
+                <textarea id="para" name="para" cols="40" rows="5">Why you want this job.</textarea>
+                <br>
+                <label class="required" for="checkbox">Choose 1 Random box</label>
+                <input type="checkbox" id="checkbox" name="checkbox" required placeholder="John Doe">
+                <input type="checkbox" id="checkbox" name="checkbox" required placeholder="John Doe">
+                <input type="checkbox" id="checkbox" name="checkbox" required placeholder="John Doe">
+                <br>
+                <label class="required" for="submit"></label>
+                <input type="submit" id="submit" name="submit" required placeholder="submit">
+            </div>
+        </form>
+</body>
+</html>
